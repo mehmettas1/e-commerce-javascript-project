@@ -97,3 +97,7 @@ function showSlides(n) {
 }
 
 //! slider end
+//! localstorage setıtem
+
+
+//! localstorage getıtem
