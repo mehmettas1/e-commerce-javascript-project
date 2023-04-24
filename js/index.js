@@ -97,7 +97,16 @@ function showSlides(n) {
 }
 
 //! slider end
-//! localstorage setıtem
+//! localstorage add product
 
+async function getData(){
+  const photos = await fetch("/js/data.json")
+  const data = await photos.json()
+ data ? localStorage.setItem("products",JSON.stringify(data)) :
+ []
+}
 
-//! localstorage getıtem
+getData()
+
+const products = localStorage.getItem("products");
+console.log(JSON.parse(products));
