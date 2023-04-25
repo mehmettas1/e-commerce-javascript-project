@@ -1,30 +1,23 @@
 import {product1} from "./glide.js";
 
-let products = [];
 
 
 
+  function productsFunc(){
 
-
-
-
-
-async  function productsFunc(){
-
-  products = (await localStorage.getItem("products")) ? JSON.parse(localStorage.getItem("products")) : [];
+ const products =  localStorage.getItem("products") ? JSON.parse(localStorage.getItem("products")) : [];
 
     const productsContainer = document.getElementById("product-list")
    
 
-   products.forEach((item) =>{
     let results = "";
-    console.log(item.price);
+   products.forEach((item) =>{
     results += `
     <li class="product-item glide__slide">
     <div class="product-image">
       <a href="#">
-        <img src="img/products/product1/1.png" alt="" class="img1">
-        <img src="img/products/product1/2.png" alt="" class="img2">
+        <img src=${item.img.singleImage} alt="" class="img1">
+        <img src=${item.img.thumbs[1]} alt="" class="img2">
       </a>
     </div>
     <div class="product-info">
@@ -47,10 +40,10 @@ async  function productsFunc(){
         </li>
       </ul>
       <div class="product-prices">
-        <strong class="new-price">$108.00</strong>
-        <span class="old-price">$165.00</span>
+        <strong class="new-price">$${item.price.newPrice}</strong>
+        <span class="old-price">$${item.price.oldPrice}</span>
       </div>
-      <span class="product-discount">-17%</span>
+      <span class="product-discount">-${item.discount}%</span>
       <div class="product-links">
         <button>
           <i class="bi bi-basket-fill"></i>
@@ -68,9 +61,9 @@ async  function productsFunc(){
     </div>
   </li>
     `;
-    console.log(productsContainer);
+    productsContainer.innerHTML = results;
    })
-   product1
+   product1()
 }
 
 export default productsFunc();
