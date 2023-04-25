@@ -1,5 +1,5 @@
 import headerFunc from "./header.js";
-
+import productsFunc from "./product.js";
 //! add product to localStorage
 async function getData() {
   const photos = await fetch("../js/data.json");
