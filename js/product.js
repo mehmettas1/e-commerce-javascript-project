@@ -40,8 +40,8 @@ import {product1} from "./glide.js";
         </li>
       </ul>
       <div class="product-prices">
-        <strong class="new-price">$${item.price.newPrice}</strong>
-        <span class="old-price">$${item.price.oldPrice}</span>
+        <strong class="new-price">$${item.price.newPrice.toFixed(2)}</strong>
+        <span class="old-price">$${item.price.oldPrice.toFixed(2)}</span>
       </div>
       <span class="product-discount">-${item.discount}%</span>
       <div class="product-links">
