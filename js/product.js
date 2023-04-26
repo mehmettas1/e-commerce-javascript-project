@@ -1,6 +1,15 @@
 import {product1} from "./glide.js";
 
 
+function addToCart(){
+const buttons = [...document.getElementsByClassName("add-to-cart")];
+buttons.forEach((button) =>{
+button.addEventListener("click",function(){
+console.log(button);
+})
+})
+}
+
 
 
   function productsFunc(){
@@ -45,7 +54,7 @@ import {product1} from "./glide.js";
       </div>
       <span class="product-discount">-${item.discount}%</span>
       <div class="product-links">
-        <button>
+        <button class="add-to-cart" data-id=${item.id}>
           <i class="bi bi-basket-fill"></i>
         </button>
         <button>
@@ -62,6 +71,7 @@ import {product1} from "./glide.js";
   </li>
     `;
     productsContainer.innerHTML = results;
+    addToCart()
    })
    product1()
 }
