@@ -9,7 +9,8 @@ function addToCart() {
   const buttons = [...document.getElementsByClassName("add-to-cart")];
   console.log(cart);
   buttons.forEach((button) => {
-    
+    const inCart = cart.find((item) => item.id === Number(button.dataset.id));
+    if(inCart)
     button.addEventListener("click", function (e) {
       e.preventDefault();
       const id = e.target.dataset.id;
