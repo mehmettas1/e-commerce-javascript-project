@@ -11,3 +11,6 @@ async function getData() {
 getData();
 
 const products = localStorage.getItem("products");
+
+
+localStorage.setItem("cart",JSON.stringify([]));
