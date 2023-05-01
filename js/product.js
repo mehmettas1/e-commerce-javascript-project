@@ -3,14 +3,17 @@ import { product1 } from "./glide.js";
 let products = [];
 let cart = [];
 
+cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
+
 function addToCart() {
   const buttons = [...document.getElementsByClassName("add-to-cart")];
+  console.log(cart);
   buttons.forEach((button) => {
+    
     button.addEventListener("click", function (e) {
       e.preventDefault();
       const id = e.target.dataset.id;
       const findProduct = products.find((product) => product.id === Number(id));
-      console.log(findProduct);
       cart.push({ ...findProduct, quantity: 1 });
       localStorage.setItem("cart", JSON.stringify(cart));
     });
