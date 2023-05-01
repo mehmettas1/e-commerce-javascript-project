@@ -10,14 +10,20 @@ function addToCart() {
   console.log(cart);
   buttons.forEach((button) => {
     const inCart = cart.find((item) => item.id === Number(button.dataset.id));
-    if(inCart)
-    button.addEventListener("click", function (e) {
-      e.preventDefault();
-      const id = e.target.dataset.id;
-      const findProduct = products.find((product) => product.id === Number(id));
-      cart.push({ ...findProduct, quantity: 1 });
-      localStorage.setItem("cart", JSON.stringify(cart));
-    });
+    if(inCart){
+      button.setAttribute("disable","disable");
+    }
+    else{
+
+      button.addEventListener("click", function (e) {
+        e.preventDefault();
+        const id = e.target.dataset.id;
+        const findProduct = products.find((product) => product.id === Number(id));
+        cart.push({ ...findProduct, quantity: 1 });
+        localStorage.setItem("cart", JSON.stringify(cart));
+        button.setAttribute("disable","disable");
+      });
+    }
   });
 }
 
