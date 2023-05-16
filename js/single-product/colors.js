@@ -5,8 +5,10 @@ function colorsFunc(){
         
         color.addEventListener("click",function () {
             colors.forEach((item) =>{
-                color.classList.remove("active")
-               });
+               
+                    item.classList.remove("active")
+                
+            })
             color.classList.add("active");
         });
     });
