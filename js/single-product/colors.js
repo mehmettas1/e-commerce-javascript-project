@@ -2,8 +2,11 @@ function colorsFunc(){
     const colors = document.querySelectorAll(".color-wrapper");
 
     colors.forEach((color)=>{
-        color.classList.remove("active");
+        
         color.addEventListener("click",function () {
+            colors.forEach((item) =>{
+                color.classList.remove("active")
+               });
             color.classList.add("active");
         });
     });
