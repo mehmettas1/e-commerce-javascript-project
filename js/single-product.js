@@ -45,3 +45,10 @@ findProduct.img.thumbs.forEach((item) => {
 galleryThumbs.innerHTML = result;
 singleThumbs();
 thumbsActiveFunc();
+
+
+const productThumbs =document.querySelectorAll(".product-thumb .glide__slide img");
+
+productThumbs[0].classList.add("active")
+
+console.log(productThumbs);
