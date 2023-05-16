@@ -50,10 +50,10 @@ export function singleThumbs() {
         perView: 3,
       },
       768: {
-        perView: 2,
+        perView: 3,
       },
       576: {
-        perView: 1,
+        perView: 3,
       },
     },
   };
