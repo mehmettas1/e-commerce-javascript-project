@@ -67,7 +67,10 @@ if(findCart) {
 } else {
   btnAddToCart.addEventListener("click",function(){
     cart.push({...findProduct, quantity:Number( quantityDOM.value)});
-    
+    btnAddToCart.setAttribute("disabled","disabled")
+localStorage.setItem("cart",JSON.stringify(cart));
+cartItems.innerHTML = cart.length;
+
 
   })
 }
