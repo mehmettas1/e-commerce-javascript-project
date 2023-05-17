@@ -59,4 +59,8 @@ JSON.parse(localStorage.getItem("cart")) :
 
 const findCart =cart.find((item) => item.id === findProduct.id );
 
-console.log(findCart);
+const btnAddToCart = document.getElementById("add-to-cart");
+
+if(findCart) {
+  btnAddToCart.setAttribute("disabled","disabled")
+}
