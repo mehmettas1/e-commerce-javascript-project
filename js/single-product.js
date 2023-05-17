@@ -53,14 +53,21 @@ productThumbs[0].classList.add("active")
 
 //! add to cart
 
-const cart = localStorage.getItem("cart") ? 
+let cart = localStorage.getItem("cart") ? 
 JSON.parse(localStorage.getItem("cart")) :
 [];
 
 const findCart =cart.find((item) => item.id === findProduct.id );
 
 const btnAddToCart = document.getElementById("add-to-cart");
+const quantityDOM = document.getElementById("quantity");
 
 if(findCart) {
   btnAddToCart.setAttribute("disabled","disabled")
+} else {
+  btnAddToCart.addEventListener("click",function(){
+    cart.push({...findProduct, quantity:Number( quantityDOM.value)});
+    
+
+  })
 }
