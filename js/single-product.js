@@ -57,4 +57,6 @@ const cart = localStorage.getItem("cart") ?
 JSON.parse(localStorage.getItem("cart")) :
 [];
 
-const findCart =cart.find((item) => )
+const findCart =cart.find((item) => item.id === findProduct.id );
+
+console.log(findCart);
