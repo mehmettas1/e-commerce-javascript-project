@@ -23,8 +23,8 @@ productTitle.innerHTML = findProduct.name;
 const newPriceDOM = document.querySelector(".new-price");
 const oldPriceDOM = document.querySelector(".old-price");
 
-newPriceDOM.innerHTML = findProduct.price.newPrice.toFixed(2);
-oldPriceDOM.innerHTML = findProduct.price.oldPrice.toFixed(2);
+newPriceDOM.innerHTML = `$${findProduct.price.newPrice.toFixed(2)}`;
+oldPriceDOM.innerHTML = `$${findProduct.price.oldPrice.toFixed(2)}`;
 
 //! product gallery */
 
