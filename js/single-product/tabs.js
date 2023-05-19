@@ -5,8 +5,12 @@ function tabsFunc(){
     
     tabsWrapperDOM.addEventListener("click",function(e){
         e.preventDefault()
-
-
+        const id = e.target.dataset.id;
+       if(id){
+        btnTab.forEach((button) => button.classList.remove("active"));
+        e.target.classList.add("active");
+        contentDOM.forEach((content) => content.classList.remove("active"))
+       }
     })
 
 
