@@ -9,7 +9,9 @@ function tabsFunc(){
        if(id){
         btnTab.forEach((button) => button.classList.remove("active"));
         e.target.classList.add("active");
-        contentDOM.forEach((content) => content.classList.remove("active"))
+        contentDOM.forEach((content) => content.classList.remove("active"));
+        const element =document.getElementById(id);
+        element.classList.add("active")
        }
     })
 
