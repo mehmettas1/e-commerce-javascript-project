@@ -24,6 +24,13 @@
 .single-tabs .tab-panel-descriptions {
   font-size: 14px;
 }
+.single-tabs .content {
+  display:none;
+}
+
+.single-tabs .content.active {
+  display:block;
+}
 
 .single-tabs .tab-panel-information table {
   width: 100%;
