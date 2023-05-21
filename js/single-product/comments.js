@@ -14,6 +14,7 @@ const addNewCommentFunc = () =>{
     let commentTextDom = document.getElementById("comment-text");
     let commentNameDom = document.getElementById("comment-name");
     let commentBtnDom = document.querySelector(".form-submit input");
+    let commentListDom = document.querySelector(".comment-list");
     let commentText = ""
     let commentName = ""
    
@@ -28,8 +29,46 @@ const addNewCommentFunc = () =>{
    })
     function addComment(e){
        e.preventDefault();
-       comments.push({text:commentText ,name:commentName})
-        
+       comments.push({text:commentText ,author:commentName})
+       let result ="";
+
+       comments.forEach((item)=>{
+        result += `
+        <li class="comment-item">
+                                        <div class="comment-avatar">
+                                            <img src="img/avatars/avatar1.jpg" alt="">
+                                        </div>
+                                        <div class="comment-text">
+                                            <ul class="comment-star ">
+                                                <li>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </li>
+                                            </ul>
+                                            <div class="comment-meta">
+                                                <strong>${item.author}</strong>
+                                                <span>-</span>
+                                                <time>April 23, 2022</time>
+                                            </div>
+                                            <div class="comment-description">
+                                                <p>${item.text}.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+        `
+       })
+        commentListDom.innerHTML =result;
     }
    
     commentBtnDom.addEventListener("click",addComment)
