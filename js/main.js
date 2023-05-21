@@ -1,5 +1,6 @@
 import headerFunc from "./header.js";
 import productsFunc from "./products.js";
+import searchFunc from "./search.js";
 
 //! add product to localStorage start
 (async function () {
