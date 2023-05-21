@@ -1,7 +1,8 @@
 const commentReviewsFunc = function() {
     const commentStarsDom = document.querySelectorAll(".comment-form-rating .star")
     commentStarsDom.forEach((item) =>{
-        item.addEventListener("click", ()=>{
+        item.addEventListener("click", (e)=>{
+            e.preventDefault()
             commentStarsDom.forEach((star) =>star.classList.remove("active"))
             item.classList.add("active");
         })
@@ -69,6 +70,10 @@ const addNewCommentFunc = () =>{
         `
        })
         commentListDom.innerHTML =result;
+        commentNameDom.value = "";
+        commentTextDom.value = "";
+
+
     }
    
     commentBtnDom.addEventListener("click",addComment)
