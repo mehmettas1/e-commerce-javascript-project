@@ -17,8 +17,8 @@
     <div class="global-notification">
       <div class="container">
         <p>
-          SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL DELIVERY
-          - OFF 50%!
+          SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL
+          DELIVERY - OFF 50%!
           <a href="shop.html">SHOP NOW</a>
         </p>
       </div>
@@ -27,12 +27,12 @@
       <div class="container">
         <div class="header-wrapper">
           <div class="header-mobile">
-            <i class="bi bi-list"></i>
+            <i class="bi bi-list" id="btn-menu"></i>
           </div>
           <div class="header-left">
-            <a href="#" class="logo">LOGO</a>
+            <a href="index.html" class="logo">LOGO</a>
           </div>
-          <div class="header-center">
+          <div class="header-center" id="sidebar">
             <nav class="navigation">
               <ul class="menu-list">
                 <li class="menu-list-item">
@@ -81,9 +81,7 @@
                     <div class="menu-dropdown-megamenu">
                       <div class="megamenu-links">
                         <div class="megamenu-products">
-                          <h3 class="megamenu-products-title">
-                            Shop Style
-                          </h3>
+                          <h3 class="megamenu-products-title">Shop Style</h3>
                           <ul class="megamenu-menu-list">
                             <li>
                               <a href="#">Shop Standard</a>
@@ -134,9 +132,7 @@
                           </ul>
                         </div>
                         <div class="megamenu-products">
-                          <h3 class="megamenu-products-title">
-                            Shop Loader
-                          </h3>
+                          <h3 class="megamenu-products-title">Shop Loader</h3>
                           <ul class="megamenu-menu-list">
                             <li>
                               <a href="#">Shop Pagination</a>
@@ -161,42 +157,42 @@
                       </div>
                       <div class="megamenu-single">
                         <a href="#">
-                          <img src="img/mega-menu.jpg" alt="">
+                          <img src="img/mega-menu.jpg" alt="" />
                         </a>
-                        <h3 class="megamenu-single-title">JOIN THE LAYERING GANG</h3>
-                        <h4 class="megamenu-single-subtitle">Suspendisse faucibus nunc et pellentesque</h4>
+                        <h3 class="megamenu-single-title">
+                          JOIN THE LAYERING GANG
+                        </h3>
+                        <h4 class="megamenu-single-subtitle">
+                          Suspendisse faucibus nunc et pellentesque
+                        </h4>
                         <a href="#" class="megamenu-single-button btn btn-sm">Shop Now</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="menu-list-item">
-                  <a href="blog.html" class="menu-link">
-                    Blog
-                  </a>
+                  <a href="blog.html" class="menu-link"> Blog </a>
                 </li>
                 <li class="menu-list-item">
-                  <a href="contact.html" class="menu-link">
-                    Contact
-                  </a>
+                  <a href="contact.html" class="menu-link"> Contact </a>
                 </li>
               </ul>
             </nav>
-            <i class="bi-x-circle"></i>
+            <i class="bi-x-circle" id="close-sidebar"></i>
           </div>
           <div class="header-right">
             <div class="header-right-links">
-              <a href="#" class="header-account">
+              <a href="account.html" class="header-account">
                 <i class="bi bi-person"></i>
               </a>
-              <button class="toggle-button">
+              <button class="search-button">
                 <i class="bi bi-search"></i>
               </button>
               <a href="#">
                 <i class="bi bi-heart"></i>
               </a>
               <div class="header-cart">
-                <a href="#" class="header-cart-link">
+                <a href="cart.html" class="header-cart-link">
                   <i class="bi bi-bag"></i>
                   <span class="header-cart-count">0</span>
                 </a>
@@ -213,9 +209,11 @@
   <div class="modal-search">
     <div class="modal-wrapper">
       <h3 class="modal-title">Search for products</h3>
-      <p class="modal-text">Start typing to see products you are looking for.</p>
+      <p class="modal-text">
+        Start typing to see products you are looking for.
+      </p>
       <form class="search-form">
-        <input type="text" placeholder="Search a product">
+        <input type="text" placeholder="Search a product" />
         <button>
           <i class="bi bi-search"></i>
         </button>
@@ -226,7 +224,7 @@
         </div>
         <div class="results">
           <a href="#" class="result-item">
-            <img src="img/products/product1/1.png" class="search-thumb" alt="">
+            <img src="img/products/product1/1.png" class="search-thumb" alt="" />
             <div class="search-info">
               <h4>Analogue Resin Strap</h4>
               <span class="search-sku">SKU: PD0016</span>
@@ -234,7 +232,7 @@
             </div>
           </a>
           <a href="#" class="result-item">
-            <img src="img/products/product2/1.png" class="search-thumb" alt="">
+            <img src="img/products/product2/1.png" class="search-thumb" alt="" />
             <div class="search-info">
               <h4>Analogue Resin Strap</h4>
               <span class="search-sku">SKU: PD0016</span>
@@ -243,10 +241,42 @@
           </a>
         </div>
       </div>
-      <i class="bi bi-x-circle"></i>
+      <i class="bi bi-x-circle" id="close-search"></i>
     </div>
   </div>
   <!--! modal search end  -->
+
+  <!--! modal dialog start  -->
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button class="modal-close">
+        <i class="bi bi-x"></i>
+      </button>
+      <div class="modal-image">
+        <img src="img/modal-dialog.jpg" alt="" />
+      </div>
+      <div class="popup-wrapper">
+        <div class="popup-content">
+          <div class="popup-title">
+            <h3>NEWSLETTER</h3>
+          </div>
+          <p class="popup-text">
+            Sign up to our newsletter and get exclusive deals you won find any
+            where else straight to your inbox!
+          </p>
+          <form class="popup-form">
+            <input type="text" placeholder="Enter Email Address Here" />
+            <button class="btn btn-primary">SUBSCRIBE</button>
+            <label>
+              <input type="checkbox" />
+              <span>Don't show this popup again</span>
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--! modal dialog end  -->
 
   <!--! single blog start  -->
   <section class="single-blog">
@@ -254,20 +284,16 @@
       <article>
         <figure>
           <a href="#">
-            <img src="img/blogs/blog1.jpg" alt="">
+            <img src="img/blogs/blog1.jpg" alt="" />
           </a>
         </figure>
         <div class="blog-wrapper">
           <div class="blog-meta">
             <div class="blog-category">
-              <a href="#">
-                COLLECTION
-              </a>
+              <a href="#"> COLLECTION </a>
             </div>
             <div class="blog-date">
-              <a href="#">
-                April 25, 2022
-              </a>
+              <a href="#"> April 25, 2022 </a>
             </div>
             <div class="blog-tags">
               <a href="#">products</a>,
@@ -276,49 +302,83 @@
           </div>
           <h1 class="blog-title">The Best Products That Shape Fashion</h1>
           <div class="blog-content">
-            <p>Donec rhoncus quis diam sit amet faucibus. Vivamus pellentesque, sem sed convallis ultricies, ante eros
-              laoreet libero, vitae suscipit lorem turpis sit amet lectus. Quisque egestas lorem ut mauris ultrices,
-              vitae sollicitudin quam facilisis. Vivamus rutrum urna non ligula tempor aliquet. Fusce tincidunt est
-              magna, id malesuada massa imperdiet ut. Nunc non nisi urna. Nam consequat est nec turpis eleifend ornare.
-              Vestibulum eu justo lobortis mauris commodo efficitur. Nunc pulvinar pulvinar cursus.</p>
-            <p>Nulla id nibh ligula. Etiam finibus elit nec nisl faucibus, vel auctor tortor iaculis. Vivamus aliquet
-              ipsum purus, vel auctor felis interdum at. Praesent quis fringilla justo. Ut non dui at mi laoreet gravida
-              vitae eu elit. Aliquam in elit eget purus scelerisque efficitur vel ac sem. Etiam ante magna, vehicula et
-              vulputate in, aliquam sit amet metus. Donec mauris eros, aliquet in nibh quis, semper suscipit nunc.
-              Phasellus ornare nibh vitae dapibus tempor.</p>
-
-            <blockquote>
-              <p>Aliquam purus enim, fringilla vel nunc imperdiet, consequat ultricies massa. Praesent sed turpis
-                sollicitudin, dignissim justo vel, fringilla mi.</p>
-            </blockquote>
-
-            <p>Vivamus libero leo, tincidunt eget lectus rhoncus, finibus interdum neque. Curabitur aliquet dolor purus,
-              id molestie purus elementum vitae. Sed quis aliquet eros. Morbi condimentum ornare nibh, et tincidunt ante
-              interdum facilisis. Praesent sagittis tortor et felis finibus vestibulum. Interdum et malesuada fames ac
-              ante ipsum primis in faucibus. Vivamus dapibus turpis sit amet turpis tincidunt, sit amet mollis turpis
-              suscipit. Proin arcu diam, pretium nec tempus eu, feugiat non ex.</p>
-            <p>Nulla id nibh ligula. Etiam finibus elit nec nisl faucibus, vel auctor tortor iaculis. Vivamus aliquet
-              ipsum purus, vel auctor felis interdum at. Praesent quis fringilla justo. Ut non dui at mi laoreet gravida
-              vitae eu elit. Aliquam in elit eget purus scelerisque efficitur vel ac sem. Etiam ante magna, vehicula et
-              vulputate in, aliquam sit amet metus. Donec mauris eros, aliquet in nibh quis, semper suscipit nunc.
-              Phasellus ornare nibh vitae dapibus tempor.</p>
             <p>
-              Donec feugiat tincidunt eros, ac aliquam purus egestas condimentum. Curabitur imperdiet at leo
-              pellentesque mattis. Fusce a dignissim est. In enim nisi, hendrerit placerat nunc quis, porttitor lobortis
-              neque. Donec nec nulla arcu. Proin felis augue, volutpat ac nunc a, semper egestas dolor. Sed varius magna
-              non lacus viverra, at dapibus sem interdum. Proin urna nibh, maximus nec interdum ut, hendrerit et arcu.
-              Nunc venenatis eget nulla at tempor. Duis sed tellus placerat, bibendum felis quis, efficitur nisi. Morbi
-              porta placerat urna et pharetra. Proin condimentum, libero ac feugiat efficitur, est orci consectetur
-              sapien, a pretium leo leo in elit. Quisque fringilla finibus arcu, pretium posuere urna posuere sit amet.
-              Nullam quis sapien a augue aliquet accumsan eget eu risus. Ut at mi sed velit condimentum porta. Proin
-              vestibulum congue ullamcorper.
+              Donec rhoncus quis diam sit amet faucibus. Vivamus pellentesque,
+              sem sed convallis ultricies, ante eros laoreet libero, vitae
+              suscipit lorem turpis sit amet lectus. Quisque egestas lorem ut
+              mauris ultrices, vitae sollicitudin quam facilisis. Vivamus
+              rutrum urna non ligula tempor aliquet. Fusce tincidunt est
+              magna, id malesuada massa imperdiet ut. Nunc non nisi urna. Nam
+              consequat est nec turpis eleifend ornare. Vestibulum eu justo
+              lobortis mauris commodo efficitur. Nunc pulvinar pulvinar
+              cursus.
             </p>
             <p>
-              Nunc blandit ligula mi, quis commodo dolor fermentum sit amet. Nam vehicula pharetra lacus a vulputate.
-              Duis pulvinar vestibulum dolor, vel commodo arcu laoreet ac. Vestibulum sed consequat purus, vitae auctor
-              metus. Duis ut aliquet odio, at tincidunt nunc. Vestibulum dignissim aliquet orci, rutrum malesuada ipsum
-              facilisis vel. Morbi tempor dignissim nisi. Maecenas scelerisque maximus justo eget sodales. Sed finibus
-              consectetur vulputate. Pellentesque id pellentesque nulla. Sed ut viverra eros. Vestibulum ut ligula quam.
+              Nulla id nibh ligula. Etiam finibus elit nec nisl faucibus, vel
+              auctor tortor iaculis. Vivamus aliquet ipsum purus, vel auctor
+              felis interdum at. Praesent quis fringilla justo. Ut non dui at
+              mi laoreet gravida vitae eu elit. Aliquam in elit eget purus
+              scelerisque efficitur vel ac sem. Etiam ante magna, vehicula et
+              vulputate in, aliquam sit amet metus. Donec mauris eros, aliquet
+              in nibh quis, semper suscipit nunc. Phasellus ornare nibh vitae
+              dapibus tempor.
+            </p>
+
+            <blockquote>
+              <p>
+                Aliquam purus enim, fringilla vel nunc imperdiet, consequat
+                ultricies massa. Praesent sed turpis sollicitudin, dignissim
+                justo vel, fringilla mi.
+              </p>
+            </blockquote>
+
+            <p>
+              Vivamus libero leo, tincidunt eget lectus rhoncus, finibus
+              interdum neque. Curabitur aliquet dolor purus, id molestie purus
+              elementum vitae. Sed quis aliquet eros. Morbi condimentum ornare
+              nibh, et tincidunt ante interdum facilisis. Praesent sagittis
+              tortor et felis finibus vestibulum. Interdum et malesuada fames
+              ac ante ipsum primis in faucibus. Vivamus dapibus turpis sit
+              amet turpis tincidunt, sit amet mollis turpis suscipit. Proin
+              arcu diam, pretium nec tempus eu, feugiat non ex.
+            </p>
+            <p>
+              Nulla id nibh ligula. Etiam finibus elit nec nisl faucibus, vel
+              auctor tortor iaculis. Vivamus aliquet ipsum purus, vel auctor
+              felis interdum at. Praesent quis fringilla justo. Ut non dui at
+              mi laoreet gravida vitae eu elit. Aliquam in elit eget purus
+              scelerisque efficitur vel ac sem. Etiam ante magna, vehicula et
+              vulputate in, aliquam sit amet metus. Donec mauris eros, aliquet
+              in nibh quis, semper suscipit nunc. Phasellus ornare nibh vitae
+              dapibus tempor.
+            </p>
+            <p>
+              Donec feugiat tincidunt eros, ac aliquam purus egestas
+              condimentum. Curabitur imperdiet at leo pellentesque mattis.
+              Fusce a dignissim est. In enim nisi, hendrerit placerat nunc
+              quis, porttitor lobortis neque. Donec nec nulla arcu. Proin
+              felis augue, volutpat ac nunc a, semper egestas dolor. Sed
+              varius magna non lacus viverra, at dapibus sem interdum. Proin
+              urna nibh, maximus nec interdum ut, hendrerit et arcu. Nunc
+              venenatis eget nulla at tempor. Duis sed tellus placerat,
+              bibendum felis quis, efficitur nisi. Morbi porta placerat urna
+              et pharetra. Proin condimentum, libero ac feugiat efficitur, est
+              orci consectetur sapien, a pretium leo leo in elit. Quisque
+              fringilla finibus arcu, pretium posuere urna posuere sit amet.
+              Nullam quis sapien a augue aliquet accumsan eget eu risus. Ut at
+              mi sed velit condimentum porta. Proin vestibulum congue
+              ullamcorper.
+            </p>
+            <p>
+              Nunc blandit ligula mi, quis commodo dolor fermentum sit amet.
+              Nam vehicula pharetra lacus a vulputate. Duis pulvinar
+              vestibulum dolor, vel commodo arcu laoreet ac. Vestibulum sed
+              consequat purus, vitae auctor metus. Duis ut aliquet odio, at
+              tincidunt nunc. Vestibulum dignissim aliquet orci, rutrum
+              malesuada ipsum facilisis vel. Morbi tempor dignissim nisi.
+              Maecenas scelerisque maximus justo eget sodales. Sed finibus
+              consectetur vulputate. Pellentesque id pellentesque nulla. Sed
+              ut viverra eros. Vestibulum ut ligula quam.
             </p>
           </div>
         </div>
@@ -329,7 +389,7 @@
           <ol class="comment-list">
             <li class="comment-item">
               <div class="comment-avatar">
-                <img src="img/avatars/avatar1.jpg" alt="">
+                <img src="img/avatars/avatar1.jpg" alt="" />
               </div>
               <div class="comment-text">
                 <ul class="comment-star">
@@ -355,14 +415,16 @@
                   <time>April 23, 2022</time>
                 </div>
                 <div class="comment-description">
-                  <p>Sed perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque laudantium.</p>
+                  <p>
+                    Sed perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium.
+                  </p>
                 </div>
               </div>
             </li>
             <li class="comment-item">
               <div class="comment-avatar">
-                <img src="img/avatars/avatar1.jpg" alt="">
+                <img src="img/avatars/avatar1.jpg" alt="" />
               </div>
               <div class="comment-text">
                 <ul class="comment-star">
@@ -388,8 +450,10 @@
                   <time>April 23, 2022</time>
                 </div>
                 <div class="comment-description">
-                  <p>Sed perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque laudantium.</p>
+                  <p>
+                    Sed perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium.
+                  </p>
                 </div>
               </div>
             </li>
@@ -400,7 +464,8 @@
           <h2>Add a review</h2>
           <form class="comment-form">
             <p class="comment-notes">
-              Your email address will not be published. Required fields are marked
+              Your email address will not be published. Required fields are
+              marked
               <span class="required">*</span>
             </p>
             <div class="comment-form-rating">
@@ -448,26 +513,25 @@
                 Name
                 <span class="required">*</span>
               </label>
-              <input id="name" type="text">
+              <input id="name" type="text" />
             </div>
             <div class="comment-form-email form-comment">
               <label for="email">
                 Email
                 <span class="required">*</span>
               </label>
-              <input id="email" type="email">
+              <input id="email" type="email" />
             </div>
             <div class="comment-form-cookies">
-              <input id="cookies" type="checkbox">
+              <input id="cookies" type="checkbox" />
               <label for="cookies">
-                Save my name, email, and website in this browser for the next time I
-                comment.
+                Save my name, email, and website in this browser for the next
+                time I comment.
                 <span class="required">*</span>
               </label>
-
             </div>
             <div class="form-submit">
-              <input type="submit" class="btn submit">
+              <input type="submit" class="btn submit" />
             </div>
           </form>
         </div>
@@ -522,16 +586,22 @@
           <div class="footer-subscribe-wrapper">
             <div class="footer-subscribe">
               <div class="footer-subscribe-top">
-                <h3 class="subscribe-title">Get our emails for info on new items, sales and more.</h3>
-                <p class="subscribe-desc">We'll email you a voucher worth $10 off your first order over $50.</p>
+                <h3 class="subscribe-title">
+                  Get our emails for info on new items, sales and more.
+                </h3>
+                <p class="subscribe-desc">
+                  We'll email you a voucher worth $10 off your first order
+                  over $50.
+                </p>
               </div>
               <div class="footer-subscribe-bottom">
                 <form>
-                  <input type="text" placeholder="Enter your email address.">
+                  <input type="text" placeholder="Enter your email address." />
                   <button class="btn">Subscribe</button>
                 </form>
                 <p class="privacy-text">
-                  By subscribing you agree to our <a href="#">Terms & Conditions and Privacy & Cookies Policy.</a>
+                  By subscribing you agree to our
+                  <a href="#">Terms & Conditions and Privacy & Cookies Policy.</a>
                 </p>
               </div>
             </div>
@@ -539,7 +609,7 @@
           <div class="footer-contact-wrapper">
             <div class="footer-contact-top">
               <h3 class="contact-title">
-                Need help? <br>
+                Need help? <br />
                 (+90) 123 456 78 90
               </h3>
               <p class="contact-desc">We are available 8:00am – 7:00pm</p>
@@ -547,15 +617,15 @@
             <div class="footer-contact-bottom">
               <div class="download-app">
                 <a href="#">
-                  <img src="img/footer/app-store.png" alt="">
+                  <img src="img/footer/app-store.png" alt="" />
                 </a>
                 <a href="#">
-                  <img src="img/footer/google-play.png" alt="">
+                  <img src="img/footer/google-play.png" alt="" />
                 </a>
               </div>
               <p class="privacy-text">
-                <strong>Shopping App:</strong> Try our View in Your Room feature, manage registries and save payment
-                info.
+                <strong>Shopping App:</strong> Try our View in Your Room
+                feature, manage registries and save payment info.
               </p>
             </div>
           </div>
@@ -570,14 +640,15 @@
               <a href="#" class="logo">LOGO</a>
             </div>
             <div class="footer-desc">
-              <p> Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis
-                in
-                termapol.</p>
+              <p>
+                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis in termapol.
+              </p>
             </div>
             <div class="footer-contact">
               <p>
-                <a href="tel:555 555 55 55">(+800) 1234 5678 90</a> – <a
-                  href="mailto:info@example.com">info@example.com</a>
+                <a href="tel:555 555 55 55">(+800) 1234 5678 90</a> –
+                <a href="mailto:info@example.com">info@example.com</a>
               </p>
             </div>
           </div>
@@ -669,11 +740,12 @@
         <div class="footer-copyright">
           <div class="site-copyright">
             <p>
-              Copyright 2022 © E-Commerce Theme. All right reserved. Powered by Emin Basbayan.
+              Copyright 2022 © E-Commerce Theme. All right reserved. Powered
+              by Emin Basbayan.
             </p>
           </div>
           <a href="#">
-            <img src="img/footer/cards.png" alt="">
+            <img src="img/footer/cards.png" alt="" />
           </a>
           <div class="footer-menu">
             <ul class="footer-menu-list">
@@ -693,6 +765,8 @@
     </div>
   </footer>
   <!--! footer end  -->
+  <script src="js/main.js" type="module"></script>
+
 </body>
 
 </html>
