@@ -53,8 +53,7 @@ function saveCartValues() {
 
   cart.length > 0 &&
     cart.map((item) => (itemsTotal += item.price.newPrice * item.quantity));
-  console.log(itemsTotal);
-  subtotal.innerHTML = `$${itemsTotal.toFixed(2)}`;
+   subtotal.innerHTML = `$${itemsTotal.toFixed(2)}`;
   cartTotal.innerHTML = `$${itemsTotal.toFixed(2)}`;
 
   fastCargo.addEventListener("change", function (e) {
